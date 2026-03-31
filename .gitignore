@@ -1,0 +1,32 @@
+# ── macOS system files ──────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*                    # Apple Double resource fork files
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?                  # custom Finder icon (has a hidden carriage return)
+
+# ── Python ──────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.env
+.venv/
+
+# ── Large MEG/EEG binary outputs ────────────────────────────────────
+# Tracked in bids_example/ only as 0-byte placeholders
+**/*.fif
+**/*.h5
+**/*.stc
+!bids_example/**
+
+# ── Editor / IDE ────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
